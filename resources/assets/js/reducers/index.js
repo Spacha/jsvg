@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-// import reducers here...
+import posts from './posts'
 
 const jsvgApp = combineReducers({
-	// reducers...
+	posts
 })
 
 export default jsvgApp
