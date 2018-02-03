@@ -1,6 +1,7 @@
 const posts = (state = [], action) => {
-	switch(action) {
+	switch(action.type) {
 		case 'ADD_POST':
+			console.log(action)
 			return [
 				...state,
 				{

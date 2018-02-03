@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import AddPost from 'containers/AddPost'
-import PostList from 'containers/PostList'
+import PostListContainer from 'containers/PostListContainer'
 import Footer from 'components/Footer'
 
 export default class App extends Component {
@@ -8,7 +8,7 @@ export default class App extends Component {
         return (
         	<div>
 	            <AddPost />
-	            <PostList />
+	            <PostListContainer />
 	            <Footer />
 	        </div>
         );

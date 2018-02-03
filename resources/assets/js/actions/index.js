@@ -4,5 +4,5 @@ export const addPost = (title, content) => ({
 	id: nextPostId++,
 	title,
 	content,
-	visible
+	visible: false
 })
