@@ -13,6 +13,12 @@
         <link href=""
     </head>
     <body>
-        <code>Loading</code>
+
+        <div id="example">
+            <code>Loading</code>
+        </div>
+
+        <!-- Scripts -->
+        <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>
