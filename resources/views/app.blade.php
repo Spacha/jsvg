@@ -10,11 +10,13 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-        <link href=""
+        <!-- Styles -->
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
+
     </head>
     <body>
 
-        <div id="example">
+        <div id="root">
             <code>Loading</code>
         </div>
 
