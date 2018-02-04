@@ -11,17 +11,19 @@ let mix = require('laravel-mix');
  |
  */
 
+const pathToAssets = 'src/'
+
 mix.webpackConfig({
   resolve: {
     alias: {
-        components: path.resolve(__dirname, 'resources/assets/js/components'),
-        containers: path.resolve(__dirname, 'resources/assets/js/containers'),
-        actions: path.resolve(__dirname, 'resources/assets/js/actions'),
-        images: path.resolve(__dirname, 'resources/assets/js/images'),
-        utils: path.resolve(__dirname, 'resources/assets/js/utils')
+        components: path.resolve(__dirname, pathToAssets + 'js/components'),
+        containers: path.resolve(__dirname, pathToAssets + 'js/containers'),
+        actions: path.resolve(__dirname, pathToAssets + 'js/actions'),
+        images: path.resolve(__dirname, pathToAssets + 'js/images'),
+        utils: path.resolve(__dirname, pathToAssets + 'js/utils')
       }
     }
   })
 
-mix.react('resources/assets/js/app.js', 'public/js')
+mix.react(pathToAssets + 'js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
