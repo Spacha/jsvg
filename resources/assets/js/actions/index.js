@@ -6,3 +6,8 @@ export const addPost = (title, content) => ({
 	content,
 	visible: false
 })
+
+export const deletePost = (id) => ({
+	type: 'DELETE_POST',
+	id
+})

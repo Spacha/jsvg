@@ -1,10 +1,10 @@
 import React from 'react'
 
-const PostList = ({ posts }) => (
+const PostList = ({ posts, deletePost }) => (
 	<div style={{ background: 'red' }}>
 		<ul>
 			{posts.map((post, key) =>
-				<li key={key}>{post.title} | {post.content}</li>
+				<li key={key} onClick={ () => deletePost(post.id) }>{post.id} | {post.title} | {post.content}</li>
 			)}
 		</ul>
 	</div>
