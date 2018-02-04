@@ -1,20 +1,8 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import Routes from '../Routes'
+import { Link } from 'react-router-dom'
 
-export default class App extends Component {
-	constructor() {
-		super()
-		this.state = { counter: 0 }
-	}
+const App = () =>
+	<Routes />
 
-	render() {
-		return (
-			<Routes>
-				<h2>Counter: {this.state.counter}</h2>
-				<Link to="/test" />
-				<Link to="/another" />
-			</Routes>
-		)
-	}
-}
+export default App
