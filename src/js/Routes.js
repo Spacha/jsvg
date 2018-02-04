@@ -8,7 +8,7 @@ import AnotherTestPage from 'containers/AnotherTestPage'
 export default class Routes extends Component {
 	render() {
 		return (
-			<Router>
+			<Router>	
 				<Switch>
 					<Route exact path="/" component={HomePage} />
 					<Route exact path="/test" component={TestPage} />
